@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on sontags</title>
+    <link>https://sonta.gs/tags/</link>
+    <description>Recent content in Tags on sontags</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-CH</language>
+    <lastBuildDate>Mon, 27 Dec 2010 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sonta.gs/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Brochure</title>
+      <link>https://sonta.gs/tags/brochure/</link>
+      <pubDate>Mon, 27 Dec 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://sonta.gs/tags/brochure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Freie Arbeit</title>
+      <link>https://sonta.gs/tags/freie-arbeit/</link>
+      <pubDate>Fri, 27 Sep 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sonta.gs/tags/freie-arbeit/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Logo</title>
+      <link>https://sonta.gs/tags/logo/</link>
+      <pubDate>Wed, 06 Mar 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sonta.gs/tags/logo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Vorlage</title>
+      <link>https://sonta.gs/tags/vorlage/</link>
+      <pubDate>Mon, 27 Dec 2010 00:00:00 +0000</pubDate>
+      
+      <guid>https://sonta.gs/tags/vorlage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Webseite</title>
+      <link>https://sonta.gs/tags/webseite/</link>
+      <pubDate>Sat, 24 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://sonta.gs/tags/webseite/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

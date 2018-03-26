@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Logo on sontags</title>
+    <link>https://sonta.gs/tags/logo/</link>
+    <description>Recent content in Logo on sontags</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>de-CH</language>
+    <lastBuildDate>Wed, 06 Mar 2013 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://sonta.gs/tags/logo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Logo Pflanzplätz</title>
+      <link>https://sonta.gs/arbeiten/2013/logo-pflanzpl%C3%A4tz/</link>
+      <pubDate>Wed, 06 Mar 2013 00:00:00 +0000</pubDate>
+      
+      <guid>https://sonta.gs/arbeiten/2013/logo-pflanzpl%C3%A4tz/</guid>
+      <description>Konzept für ein Logo der Band Planzplätz. Das Logo verbindet die urchige aber modern interpretierte Musik mit dem Gärtnertum des sich im Namen versteckt.</description>
+    </item>
+    
+  </channel>
+</rss>

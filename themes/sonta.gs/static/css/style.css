@@ -1,0 +1,215 @@
+:root {
+    --main-color: rgb(48, 27, 5);
+    --bg-color: white;
+    --accent-color: rgb(255, 114, 0);
+    --grid-gap: 30px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    line-height: 1.6;
+    background-color: var(--bg-color);
+    color: var(--main-color);
+}
+
+.grid {
+    padding-top: 50px;
+    display: grid;
+    grid-gap: var(--grid-gap);
+}
+
+.logo {
+    width: 100%;
+    grid-area: logo;
+}
+
+.logoimg {
+    height: 50px;
+    transform: rotate(-12deg);
+}
+
+.logopath {
+    fill: var(--main-color);
+}
+
+.logopath:hover {
+    fill: var(--accent-color);
+}
+
+.navigation {
+    grid-area: nav;
+    text-align: right;
+}
+
+.navlink {
+    padding-left: 20px;
+}
+
+.content {
+    grid-area: content;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+a.active {
+    border-bottom: 2px solid var(--main-color);
+    padding-bottom: 2px;
+}
+
+.hidden {
+    display: none;
+}
+
+.single {
+    display: grid;
+    grid-gap: var(--grid-gap);
+    grid-auto-flow: row dense;
+}
+
+.text {
+    grid-column: text-start / text-end;
+}
+
+address {
+    font-size: 32px;
+    line-height: 1.4;
+    padding-bottom: 50px;
+    font-style: normal;
+}
+
+.projects {
+    column-gap: var(--grid-gap);
+}
+
+.project {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: var(--grid-gap);
+}
+
+.project > img {
+    width: 100%;
+    display: block;
+}
+
+.cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}
+
+.cover:hover {
+    opacity: 1;
+}
+
+.cover > .title {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 45%;
+    transform: translateY(-45%);
+}
+
+/* --- arbeiten details --- */
+
+.header {
+    font-weight: 700;
+    grid-column: header-start / header-end;
+}
+
+.expose {
+    grid-column: full-start / full-end;
+}
+
+.expose > img {
+    width: 100%;
+    display: block;
+}
+
+@media only screen and (max-width: 750px) {
+    .grid {
+        grid-template-columns: 1fr 10fr 1fr;
+        grid-template-rows: 40px 30px min-content 60px;
+        grid-template-areas:
+            "left logo    right"
+            "left nav     right"
+            "left content right"
+            "left footer right";
+    }
+
+    .logowrapper {
+        text-align: right;
+    }
+
+    .logoimg {
+        transform: rotate(12deg);
+    }
+
+    .navlink {
+        padding-left: 0;
+        padding-right: 20px;
+    }
+
+    .navigation {
+        text-align: left;
+    }
+
+    .single {
+        grid-template-columns: [full-start header-start text-start] 10fr [full-end header-end text-end];
+    }
+
+    .projects {
+        column-count: 1;
+    }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1100px){
+    .grid {
+        grid-template-columns: 1fr repeat(2, 3fr) 1fr;
+        grid-template-rows: 60px min-content 60px;
+        grid-template-areas:
+            "left logo    nav     right"
+            "left content content right"
+            "left footer  footer  right";
+    }
+
+    .single {
+        grid-template-columns: [full-start header-start text-start] repeat(2, 3fr) [full-end header-end text-end];
+    }
+
+    .projects {
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    .grid {
+        grid-template-columns: 1fr repeat(3, 300px) 1fr;
+        grid-template-rows: 60px min-content 60px;
+        grid-template-areas:
+            "left logo    nav     nav     right"
+            "left content content content right"
+            "left footer  footer  footer  right";
+    }
+
+    .single {
+        grid-template-columns: [full-start header-start] 300px [header-end text-start] repeat(2, 300px) [text-end full-end];
+    }
+
+    .projects {
+        column-count: 3;
+    }
+}

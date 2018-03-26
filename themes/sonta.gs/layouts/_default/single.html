@@ -1,0 +1,15 @@
+{{ define "title" }}
+    {{ .Title }}
+{{ end }}
+
+{{ define "content" }}
+<div class="single">
+    {{ $baseurl := .URL}}
+    {{ range .Params.images }}
+        <div class="expose"><img src="{{ $baseurl }}{{ .src }}" alt="{{ .alt }}"></div>
+    {{ end }}
+    <div class="header">{{ .Title }} / {{ .Date.Format "2006" }}</div>
+    <div class="text">{{ .Content }}
+    </div>
+</div>
+{{ end }}

@@ -1,0 +1,7 @@
+baseURL = "https://sonta.gs/"
+languageCode = "de-CH"
+title = "sontags"
+theme = "sonta.gs"
+
+[permalinks]
+  arbeiten = "arbeiten/:year/:title/"
