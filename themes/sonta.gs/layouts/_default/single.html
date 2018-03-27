@@ -9,7 +9,14 @@
         <div class="expose"><img src="{{ $baseurl }}{{ .src }}" alt="{{ .alt }}"></div>
     {{ end }}
     <div class="header">{{ .Title }} / {{ .Date.Format "2006" }}</div>
-    <div class="text">{{ .Content }}
+    <div class="text">{{ .Content }}</div>
+    <div class="footnote">
+        {{ range .Params.notes }}
+            <div class="notes">{{ . }}</div>
+        {{ end }}
+        {{ if isset .Params "reference" }}
+            <div class="reference"><a href="{{ .Params.reference}}" target="_blank">{{ .Params.reference }}</a></div>
+        {{ end }}
     </div>
 </div>
 {{ end }}

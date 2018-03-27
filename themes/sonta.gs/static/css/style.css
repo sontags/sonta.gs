@@ -1,6 +1,7 @@
 :root {
     --main-color: rgb(48, 27, 5);
     --bg-color: white;
+    --gray-color: rgb(214, 214, 214);
     --accent-color: rgb(255, 114, 0);
     --grid-gap: 30px;
 }
@@ -55,6 +56,9 @@ body {
 a {
     text-decoration: none;
     color: var(--main-color);
+}
+
+.navlink > a {
     font-weight: 700;
 }
 
@@ -132,11 +136,21 @@ address {
 
 .expose {
     grid-column: full-start / full-end;
+    background-color: var(--gray-color);
 }
 
 .expose > img {
     width: 100%;
     display: block;
+}
+
+.footnote {
+    grid-column: text-start / text-end;
+}
+
+.notes, .reference {
+    font-size: 14px;
+    font-weight: normal;
 }
 
 @media only screen and (max-width: 750px) {
