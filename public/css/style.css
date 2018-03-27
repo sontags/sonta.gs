@@ -1,16 +1,21 @@
 :root {
     --main-color: rgb(48, 27, 5);
     --bg-color: white;
-    --gray-color: rgb(214, 214, 214);
+    --gray-color: rgb(244, 244, 244);
     --accent-color: rgb(255, 114, 0);
+
     --grid-gap: 30px;
+
+    --font-size-small: 14px;
+    --font-size-regular: 20px;
+    --font-size-large: 32px;
 }
 
 body {
     margin: 0;
     padding: 0;
     font-family: 'Karla', sans-serif;
-    font-size: 20px;
+    font-size: var(--font-size-regular);
     line-height: 1.6;
     background-color: var(--bg-color);
     color: var(--main-color);
@@ -82,7 +87,7 @@ a.active {
 }
 
 address {
-    font-size: 32px;
+    font-size: var(--font-size-large);
     line-height: 1.4;
     padding-bottom: 50px;
     font-style: normal;
@@ -149,14 +154,25 @@ address {
 }
 
 .notes, .reference {
-    font-size: 14px;
+    font-size: var(--font-size-small);
     font-weight: normal;
+}
+
+/* --- arbeiten details --- */
+
+.footer {
+    grid-area: footer;
+    font-size: var(--font-size-small);
+    transform: rotate(-8deg);
+    transform-origin: top right;
+    text-align: right;
+    padding-top: 30px;
 }
 
 @media only screen and (max-width: 750px) {
     .grid {
-        grid-template-columns: 1fr 10fr 1fr;
-        grid-template-rows: 40px 30px min-content 60px;
+        grid-template-columns: 5px 1fr 5px;
+        grid-template-rows: 40px 30px min-content 120px;
         grid-template-areas:
             "left logo    right"
             "left nav     right"
@@ -193,11 +209,11 @@ address {
 @media only screen and (min-width: 750px) and (max-width: 1100px){
     .grid {
         grid-template-columns: 1fr repeat(2, 3fr) 1fr;
-        grid-template-rows: 60px min-content 60px;
+        grid-template-rows: 60px min-content 120px;
         grid-template-areas:
             "left logo    nav     right"
             "left content content right"
-            "left footer  footer  right";
+            "left none  footer  right";
     }
 
     .single {
@@ -212,11 +228,11 @@ address {
 @media only screen and (min-width: 1100px) {
     .grid {
         grid-template-columns: 1fr repeat(3, 300px) 1fr;
-        grid-template-rows: 60px min-content 60px;
+        grid-template-rows: 60px min-content 120px;
         grid-template-areas:
             "left logo    nav     nav     right"
             "left content content content right"
-            "left footer  footer  footer  right";
+            "left none  none   footer  right";
     }
 
     .single {
