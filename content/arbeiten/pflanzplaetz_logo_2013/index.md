@@ -10,4 +10,4 @@ images:
 ---
 
 Konzept für ein Logo der Band Planzplätz. Das Logo verbindet die urchige aber modern interpretierte
-Musik mit dem Gärtnertum des sich im Namen versteckt.
+Musik mit dem Gärtnertum der sich im Namen versteckt.
