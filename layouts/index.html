@@ -3,19 +3,16 @@
 {{ end }}
 
 {{ define "content" }}
-{{.Content}}
-<div class="list">
-    <div class="projects">
-        {{ range where .Data.Pages "Section" "arbeiten" }}
-            <div class="project">
-                <img class="thumb" src="{{ .URL }}thumb.png">
-                <a href="{{ .URL }}"><div class="cover">
-                        <div class="title">
-                            <b>{{ .Title }}</b><br>
-                            {{ .Date.Format "2006" }}</div>
-                </div></a>
-            </div>
-        {{ end }}
-    </div>
+<div class="projects">
+    {{ range where .Data.Pages "Section" "arbeiten" }}
+        <div class="project">
+            <img class="thumb" src="{{ .URL }}thumb.png">
+            <a href="{{ .URL }}"><div class="cover">
+                    <div class="title">
+                        <b>{{ .Title }}</b><br>
+                        {{ .Date.Format "2006" }}</div>
+            </div></a>
+        </div>
+    {{ end }}
 </div>
 {{ end }}
