@@ -34,7 +34,7 @@ body {
 
 .logoimg {
     height: 50px;
-    transform: rotate(-12deg);
+    transform: rotate(-8deg);
 }
 
 .logopath {
@@ -186,7 +186,7 @@ address {
     }
 
     .logoimg {
-        transform: rotate(12deg);
+        transform: rotate(8deg);
     }
 
     .navlink {
