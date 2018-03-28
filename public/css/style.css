@@ -21,6 +21,11 @@ body {
     color: var(--main-color);
 }
 
+::selection {
+  background: var(--accent-color);
+  color: white;
+}
+
 .grid {
     padding-top: 50px;
     display: grid;
@@ -70,6 +75,14 @@ a {
 a.active {
     border-bottom: 2px solid var(--main-color);
     padding-bottom: 2px;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
+
+a.active:hover {
+    border-color: var(--accent-color);
 }
 
 .hidden {
