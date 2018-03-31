@@ -257,8 +257,8 @@ address {
             "logo    nav     nav    "
             "content content content"
             "none    none    footer ";
-        margin-right: var(--grid-gap);
-        margin-left: var(--grid-gap);
+        margin-right: calc(2 * var(--grid-gap));
+        margin-left: calc(2 * var(--grid-gap));
     }
 
     .single {
@@ -267,6 +267,10 @@ address {
 
     .projects {
         column-count: 3;
+    }
+
+    .text {
+        padding-right: var(--grid-gap);
     }
 }
 
@@ -286,5 +290,9 @@ address {
 
     .projects {
         column-count: 4;
+    }
+
+    .text {
+        padding-right: var(--grid-gap);
     }
 }
