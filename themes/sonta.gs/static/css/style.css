@@ -4,7 +4,7 @@
     --gray-color: rgb(244, 244, 244);
     --accent-color: rgb(255, 114, 0);
 
-    --grid-gap: 30px;
+    --grid-gap: 20px;
 
     --font-size-small: 14px;
     --font-size-regular: 20px;
@@ -16,9 +16,14 @@ body {
     padding: 0;
     font-family: 'Karla', sans-serif;
     font-size: var(--font-size-regular);
+    font-weight: 400;
     line-height: 1.6;
     background-color: var(--bg-color);
     color: var(--main-color);
+}
+
+b {
+    font-weight: 700;
 }
 
 ::selection {
