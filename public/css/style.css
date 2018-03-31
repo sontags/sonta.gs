@@ -281,7 +281,7 @@ address {
     }
 
     .single {
-        grid-template-columns: [full-start header-start] 1fr [header-end text-start] repeat(3, 1fr) [text-end full-end];
+        grid-template-columns: [full-start header-start] 1fr [header-end text-start] repeat(2, 1fr) [text-end full-end];
     }
 
     .projects {
