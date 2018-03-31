@@ -8,7 +8,7 @@
 
     --font-size-small: 14px;
     --font-size-regular: 20px;
-    --font-size-large: 32px;
+    --font-size-large: 30px;
 }
 
 body {
@@ -178,26 +178,28 @@ address {
     font-weight: normal;
 }
 
-/* --- arbeiten details --- */
+/* --- footer --- */
 
 .footer {
     grid-area: footer;
     font-size: var(--font-size-small);
     transform: rotate(-8deg);
-    transform-origin: top right;
+    transform-origin: bottom right;
     text-align: right;
     padding-top: 30px;
 }
 
 @media only screen and (max-width: 750px) {
     .grid {
-        grid-template-columns: 5px 1fr 5px;
+        grid-template-columns: 1fr;
         grid-template-rows: 40px 30px min-content 120px;
         grid-template-areas:
-            "left logo    right"
-            "left nav     right"
-            "left content right"
-            "left footer  right";
+            "logo    "
+            "nav     "
+            "content "
+            "footer  ";
+        margin-right: var(--grid-gap);
+        margin-left: var(--grid-gap);
     }
 
     .logowrapper {
@@ -228,12 +230,14 @@ address {
 
 @media only screen and (min-width: 750px) and (max-width: 1000px){
     .grid {
-        grid-template-columns: 10px repeat(2, 3fr) 10px;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 60px min-content 120px;
         grid-template-areas:
-            "left logo    nav     right"
-            "left content content right"
-            "left none  footer  right";
+            "logo    nav    "
+            "content content"
+            "none    footer ";
+        margin-right: var(--grid-gap);
+        margin-left: var(--grid-gap);
     }
 
     .single {
@@ -247,12 +251,14 @@ address {
 
 @media only screen and (min-width: 1000px) and (max-width: 1600px) {
     .grid {
-        grid-template-columns: 15px repeat(3, 1fr) 15px;
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 60px min-content 120px;
         grid-template-areas:
-            "left logo    nav     nav     right"
-            "left content content content right"
-            "left none  none   footer  right";
+            "logo    nav     nav    "
+            "content content content"
+            "none    none    footer ";
+        margin-right: var(--grid-gap);
+        margin-left: var(--grid-gap);
     }
 
     .single {
