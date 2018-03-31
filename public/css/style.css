@@ -4,11 +4,11 @@
     --gray-color: rgb(244, 244, 244);
     --accent-color: rgb(255, 114, 0);
 
-    --grid-gap: 30px;
+    --grid-gap: 20px;
 
     --font-size-small: 14px;
     --font-size-regular: 20px;
-    --font-size-large: 32px;
+    --font-size-large: 30px;
 }
 
 body {
@@ -16,9 +16,14 @@ body {
     padding: 0;
     font-family: 'Karla', sans-serif;
     font-size: var(--font-size-regular);
+    font-weight: 400;
     line-height: 1.6;
     background-color: var(--bg-color);
     color: var(--main-color);
+}
+
+b {
+    font-weight: 700;
 }
 
 ::selection {
@@ -108,6 +113,7 @@ address {
 
 .projects {
     column-gap: var(--grid-gap);
+    column-fill: balance;
 }
 
 .project {
@@ -172,26 +178,28 @@ address {
     font-weight: normal;
 }
 
-/* --- arbeiten details --- */
+/* --- footer --- */
 
 .footer {
     grid-area: footer;
     font-size: var(--font-size-small);
     transform: rotate(-8deg);
-    transform-origin: top right;
+    transform-origin: bottom right;
     text-align: right;
     padding-top: 30px;
 }
 
 @media only screen and (max-width: 750px) {
     .grid {
-        grid-template-columns: 5px 1fr 5px;
+        grid-template-columns: 1fr;
         grid-template-rows: 40px 30px min-content 120px;
         grid-template-areas:
-            "left logo    right"
-            "left nav     right"
-            "left content right"
-            "left footer  right";
+            "logo    "
+            "nav     "
+            "content "
+            "footer  ";
+        margin-right: var(--grid-gap);
+        margin-left: var(--grid-gap);
     }
 
     .logowrapper {
@@ -220,14 +228,16 @@ address {
     }
 }
 
-@media only screen and (min-width: 750px) and (max-width: 1100px){
+@media only screen and (min-width: 750px) and (max-width: 1000px){
     .grid {
-        grid-template-columns: 1fr repeat(2, 3fr) 1fr;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 60px min-content 120px;
         grid-template-areas:
-            "left logo    nav     right"
-            "left content content right"
-            "left none  footer  right";
+            "logo    nav    "
+            "content content"
+            "none    footer ";
+        margin-right: var(--grid-gap);
+        margin-left: var(--grid-gap);
     }
 
     .single {
@@ -239,21 +249,42 @@ address {
     }
 }
 
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1000px) and (max-width: 1600px) {
     .grid {
-        grid-template-columns: 1fr repeat(3, 300px) 1fr;
+        grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 60px min-content 120px;
         grid-template-areas:
-            "left logo    nav     nav     right"
-            "left content content content right"
-            "left none  none   footer  right";
+            "logo    nav     nav    "
+            "content content content"
+            "none    none    footer ";
+        margin-right: var(--grid-gap);
+        margin-left: var(--grid-gap);
     }
 
     .single {
-        grid-template-columns: [full-start header-start] 300px [header-end text-start] repeat(2, 300px) [text-end full-end];
+        grid-template-columns: [full-start header-start] 1fr [header-end text-start] repeat(2, 1fr) [text-end full-end];
     }
 
     .projects {
         column-count: 3;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .grid {
+        grid-template-columns: 1fr repeat(4, 340px) 1fr;
+        grid-template-rows: 60px min-content 120px;
+        grid-template-areas:
+            "left logo    nav     nav     nav     right"
+            "left content content content content right"
+            "left none    none    none    footer  right";
+    }
+
+    .single {
+        grid-template-columns: [full-start header-start] 1fr [header-end text-start] repeat(3, 1fr) [text-end full-end];
+    }
+
+    .projects {
+        column-count: 4;
     }
 }
