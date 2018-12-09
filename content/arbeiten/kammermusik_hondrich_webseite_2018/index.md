@@ -2,6 +2,7 @@
 title: "Webseite Kammermusikkonzerte Hondrich"
 tags: [ "Logo" ]
 date: "2018-12-01"
+reference: "https://www.kammermusik-hondrich.ch/"
 images:
 - src: thumb.png
   alt: "Webseite"
@@ -16,4 +17,4 @@ images:
 ---
 
 Fur die Kammermusikkonzerte Hondrich wurde eine neue [Webseite](https://www.kammermusik-hondrich.ch) entworfen. 
-Die Webseite wurde Mobile-tauglich konzipiert und umfasst ein Reservationssystem.
+Die Webseite wurde Mobile-tauglich konzipiert und beinhaltet ein eigen angefertigtes platzgenaues Reservationssystem.
