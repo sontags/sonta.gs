@@ -8,4 +8,4 @@ images:
 ---
 
 Konzeptarbeit; Entwurf für ein Plakat im Weltformat für das Buskers Strassenmusikfestival in Bern. Der Tanzbär wurde
-in Linoleum geschnitten, digitalisiert und am Computer colorisiert.
+in Linoleum geschnitten, digitalisiert und am Computer coloriert.
