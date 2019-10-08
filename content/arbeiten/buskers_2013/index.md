@@ -1,7 +1,7 @@
 ---
 title: "Buskers Plakat"
 tags: [ "Freie Arbeit" ]
-date: "2013-09-27"
+date: "2013-09-26"
 images:
 - src: thumb.png
   alt: "Plakat Buskers"
