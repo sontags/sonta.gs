@@ -8,8 +8,8 @@ layout: "infos"
 
 <address>
 Daniel Menet<br>
-Schwanengasse 29<br>
-2503 Biel/Bienne
+Auweg 8<br>
+2502 Biel/Bienne
 </address>
 
 Mit dem Gestalten habe ich zur Zeit meiner Lehre begonnen &mdash; damals als Nebenverdienst.

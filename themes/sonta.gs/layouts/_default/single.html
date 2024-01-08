@@ -4,7 +4,7 @@
 
 {{ define "content" }}
 <div class="single">
-    {{ $baseurl := .URL}}
+    {{ $baseurl := .Permalink}}
     {{ range .Params.images }}
         <div class="expose"><img src="{{ $baseurl }}{{ .src }}" alt="{{ .alt }}"></div>
     {{ end }}
